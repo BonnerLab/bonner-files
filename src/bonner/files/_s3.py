@@ -3,6 +3,8 @@ from pathlib import Path
 from loguru import logger
 import boto3
 
+# TODO: refactor to include bonner.files._utilities.prepare_filepath
+
 
 def download(
     s3_path: Path,
