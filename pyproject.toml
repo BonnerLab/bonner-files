@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bonner-files"
+description = "Bonner lab utilities for handling files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Raj Magesh Gauthaman", email = "rgautha1@jh.edu"}
+]
+keywords = [
+    "Bonner Lab",
+    "utilities",
+    "files",
+    "download",
+    "S3",
+    "extract",
+    "figshare",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+urls = {repository = "https://github.com/BonnerLab/bonner-files"}
+dependencies = [
+    "loguru",
+    "boto3",
+]
+dynamic = ["version"]
