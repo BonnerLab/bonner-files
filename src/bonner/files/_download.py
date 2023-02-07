@@ -6,7 +6,7 @@ from loguru import logger
 from bonner.files._utilities import prepare_filepath
 
 
-def download_from_url(
+def download(
     url: str,
     *,
     filepath: Path = None,
